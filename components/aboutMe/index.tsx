@@ -28,7 +28,7 @@ export const AboutMe: React.FC = () => {
         </p>
         <p className="py-2 lg:py-4">
           I started in speech pathology where I was introduced to the
-          transformative impact of Alternative Augmentative Communication (AAC)
+          transformative impact of Augmentative and Alternative Communication (AAC)
           devices, which enabled individuals with communication challenges to
           express themselves. Motivated by this experience, I transitioned to
           software engineering, where I could make a broader difference while
