@@ -47,11 +47,9 @@ export const AboutMe: React.FC = () => {
           Crafting and DIY projects take up a large part of my time. My crafts
           include crocheting, drawing, restoring antique furniture and my
           proudest achievement:{" "}
-          <button type="button">
-            <span className="text-tertiary font-bold">
-              a DIY miniture house project
-            </span>
-          </button>
+          <span className="text-tertiary font-bold">
+            a DIY miniture house project
+          </span>
           . On video, you can find me with a cup of tea in hand surrounded by
           one of my three cats 🐈‍⬛ and two dogs 🐕‍🦺. My two standard poodles,
           Violet and Lola, love joining me on daily walks around the city. My
