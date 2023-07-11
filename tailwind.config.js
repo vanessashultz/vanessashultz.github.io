@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        text: {
+        offWhite: '#f9f9f9',
+        gray: {
           primary: '#2e2e30',
           secondary: '#4a4a4a',
         },
@@ -20,6 +21,9 @@ module.exports = {
           light: '#5dd9c1',
           green: '#59cd90',
         },
+      },
+      fontFamily: {
+        gerhause: "gerhause",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

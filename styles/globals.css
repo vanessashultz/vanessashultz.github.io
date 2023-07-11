@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: "gerhause";
+  src: url("../public/Gerhaus-PK69E.ttf")
+}
