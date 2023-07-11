@@ -52,10 +52,10 @@ export const AboutMe: React.FC = () => {
               a DIY miniture house project
             </span>
           </button>
-          . On video, you can find me with a cup of tea in
-          hand surrounded by one of my three cats 🐈‍⬛ and two dogs 🐕‍🦺. My two
-          standard poodles, Violet and Lola, love joining me on daily walks
-          around the city. My favorite place in the world is{" "}
+          . On video, you can find me with a cup of tea in hand surrounded by
+          one of my three cats 🐈‍⬛ and two dogs 🐕‍🦺. My two standard poodles,
+          Violet and Lola, love joining me on daily walks around the city. My
+          favorite place in the world is{" "}
           <span className="text-tertiary font-bold">
             12,000 feet above sea level
           </span>{" "}
