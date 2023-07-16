@@ -1,23 +1,29 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
+import { Card } from '../card';
 
 export const ShowAndShare: React.FC = () => {
+  const resumeList = [
+    'Organize speakers and presentations for the monthly Show and Share event, which is a organization-wide meeting where employees present on a topic of their choice.',
+  ];
+
   return (
-    <div className="max-h-sm w-full lg:w-1/2 rounded-xl overflow-hidden shadow-lg bg-offWhite">
-      <div className="px-6 py-4">
-        <Image src="/logos/c2fo_logo.svg" alt="logo" width={100} height={100} />
-        <div className="font-bold text-xl pt-8 font-gerhause">
-          Show and Share: Speaker RelationShip Manager
-        </div>
-        <h3 className="text-lg italic">February 2022 to Present</h3>
-        <ul className="text-sm">
-          <li className="py-2">
-            Organize speakers and presentations for the monthly Show and Share
-            event, which is a organization-wide meeting where employees present
-            on a topic of their choice.
-          </li>
-        </ul>
-      </div>
-    </div>
+    <Card
+      image={
+        <Image
+          src="/logos/c2fo_logo.svg"
+          alt="logo"
+          width={100}
+          height={100}
+          className="dark:rounded-md dark:border-2 dark:border-blue-dark dark:bg-offWhite dark:p-2"
+        />
+      }
+      companyLink="https://c2fo.com/"
+      title="Show and Share: Speaker Relationship Manager"
+      dateRange="February 2022 to Present"
+      resumeList={resumeList}
+      showAwards={false}
+      showPresentations={false}
+    />
   );
 };

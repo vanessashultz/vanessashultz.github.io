@@ -1,11 +1,9 @@
-import { Nav } from "@/components/heading/nav/nav";
-import { LeadershipExperience } from "@/components/leadership";
+import { LeadershipExperience } from '@/components/leadership';
 
 export default function Leadership() {
   return (
-    <main className="bg-gradient-to-b from-white to-gray-200 min-h-screen">
-      <Nav />
-      <div className="px-10 text-gray-primary items-center">
+    <main className="min-h-screen bg-offWhite dark:bg-darkMode-gray-primary">
+      <div className="items-center px-10 text-gray-primary dark:text-offWhite">
         <LeadershipExperience />
       </div>
     </main>

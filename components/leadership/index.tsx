@@ -1,22 +1,22 @@
-import React from "react";
-import { CultureCabinet } from "./culturecabinet";
-import { KCWiT } from "./kcwit";
-import { SQLLab } from "./sqlLab";
-import { OnboardingAmbassador } from "./onboardingAmbassador";
-import { ShowAndShare } from "./showAndShare";
+import React from 'react';
+import { CultureCabinet } from './culturecabinet';
+import { KCWiT } from './kcwit';
+import { SQLLab } from './sqlLab';
+import { OnboardingAmbassador } from './onboardingAmbassador';
+import { ShowAndShare } from './showAndShare';
 
 export const LeadershipExperience: React.FC = () => {
   return (
-    <div className="text-center lg:text-left text-5xl lg:text-6xl justify-center py-2 text-gray-primary">
-      <h3 className="text-2xl lg:text-7xl pt-20 pb-14 text-primary font-gerhause">
+    <div className="justify-center py-2 text-center text-5xl text-gray-primary lg:text-left lg:text-6xl">
+      <h3 className="pb-14 pt-20 font-gerhause text-2xl tracking-widest text-primary dark:text-blue-dark lg:text-7xl">
         Leadership Experiences
       </h3>
-      <div className="space-y-3 lg:flex lg:flex-row lg:space-x-3 text-left lg:align-top lg:space-y-0">
+      <div className="space-y-3 text-left lg:flex lg:flex-row lg:space-x-3 lg:space-y-0 lg:align-top">
         <KCWiT />
         <CultureCabinet />
         <SQLLab />
       </div>
-      <div className="py-3 space-y-3 lg:flex lg:flex-row lg:space-x-3 text-left lg:align-top lg:space-y-0">
+      <div className="space-y-3 py-3 text-left lg:flex lg:flex-row lg:space-x-3 lg:space-y-0 lg:align-top">
         <ShowAndShare />
         <OnboardingAmbassador />
       </div>
