@@ -1,6 +1,4 @@
 import React from 'react';
-import { AiFillGithub, AiFillGoogleCircle, AiFillLinkedin } from 'react-icons/ai';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 interface ButtonMailToProps {
   mailTo: string;
