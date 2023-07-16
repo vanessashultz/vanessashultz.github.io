@@ -1,14 +1,12 @@
 import { Nav } from '../nav';
-import { ThemeToggle } from '../themeToggle';
 
 interface LayoutProps {
-  handleThemeSwitch: () => void;
   children: any;
 }
-export const Layout: React.FC<LayoutProps> = ({ handleThemeSwitch, children }) => {
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Nav handleThemeSwitch={handleThemeSwitch} />
+      <Nav />
       <main className="bg-offWhite dark:bg-darkMode-gray-primary">{children}</main>
     </>
   );

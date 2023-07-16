@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { ButtonMailTo } from './contact button/buttonMailTo';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { ThemeToggle } from '../themeToggle';
+import ThemeSwitcher from '../themeSwitcher';
 
 const navlinks = [
   {
@@ -27,11 +27,7 @@ const navlinks = [
   },
 ];
 
-interface NavProps {
-  handleThemeSwitch: () => void;
-}
-
-export const Nav: React.FC<NavProps> = ({ handleThemeSwitch }) => {
+export const Nav: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleHamburgerClick = () => {
@@ -44,7 +40,7 @@ export const Nav: React.FC<NavProps> = ({ handleThemeSwitch }) => {
         <div className="mx-auto px-4 sm:px-6 ">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center gap-4 font-gerhause text-4xl">
-              <ThemeToggle handleThemeSwitch={handleThemeSwitch} />
+              <ThemeSwitcher />
               <a href="/" className="tracking-wider">
                 Nessa
               </a>
