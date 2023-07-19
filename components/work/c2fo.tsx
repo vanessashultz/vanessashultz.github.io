@@ -6,7 +6,7 @@ export const C2FO: React.FC = () => {
   const resumeList = [
     'Delivered a full-stack greenfield product for a physical card in a distributed system that increased cash flow for suppliers by allowing refunds for previously discounted invoices.',
     'Developed the frontend that allowed for the onboarding of supplemental card users, resulting in a 10% increase in issued cards and enabling the addition of new card users over time.',
-    'Implemented backend API functionality with an internal app to enable resubmissions of errored onboarding submissions of users, ensuring uninterrupted onboarding within the app.',
+    'Implemented backend API functionality with an app to enable the internal ops team to initiate resubmissions of errored onboarding submissions of users, ensuring uninterrupted onboarding.',
     'Designed and implemented the frontend for an initiative that allowed suppliers to receive faster funding onto their card, generating an additional $2.8MM of spend in a month.',
     'Led Knowledge Transfers and mentored team members on utilizing new technologies, enhancing analytic metric visibility.',
   ];

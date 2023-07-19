@@ -7,6 +7,10 @@ export const SQLLab: React.FC = () => {
     'Conducted interactive sessions to educate non-technical employees on utilizing SQL queries in company databases.',
   ];
   const presentationList = ['SQL: Basic Queries', 'SQL: Intermediate Queries and Joins'];
+  const presentationLinks = [
+    'https://docs.google.com/presentation/d/1BcHLx-1M0AW84WCY4bUezs2ps0V5DIc1jyc-lv3mL34/edit?usp=sharing',
+    'https://docs.google.com/presentation/d/1dqjzanHjs0Skd8jaazjmflp9RT9t3KYG17XKaCu4h_M/edit?usp=sharing',
+  ];
 
   return (
     <Card
@@ -26,6 +30,7 @@ export const SQLLab: React.FC = () => {
       showAwards={false}
       showPresentations={true}
       presentationList={presentationList}
+      presentationLinks={presentationLinks}
     />
   );
 };

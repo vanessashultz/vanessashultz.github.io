@@ -12,6 +12,7 @@ interface CardProps {
   awardDescription?: string[];
   showPresentations: boolean;
   presentationList?: string[];
+  presentationLinks?: string[];
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -25,18 +26,41 @@ export const Card: React.FC<CardProps> = ({
   awardDescription,
   showPresentations,
   presentationList,
+  presentationLinks,
 }) => {
   const awards =
-    showAwards && awardNames && awardDescription
-      ? awardNames.map((award, index) => {
-          const description = awardDescription[index];
-          return (
-            <li className="py-2">
-              <span className="font-bold text-blue-light">{award}</span> {description}
-            </li>
-          );
-        })
-      : null;
+    showAwards && awardNames && awardDescription ? (
+      awardNames.map((award, index) => {
+        const description = awardDescription[index] || null;
+        return (
+          <li className="py-2">
+            <span className="font-bold text-blue-light">{award}</span> {description}
+          </li>
+        );
+      })
+    ) : (
+      <></>
+    );
+
+  const presentations =
+    presentationList && presentationLinks ? (
+      presentationList?.map((presentation, index) => {
+        const link = presentationLinks[index] || null;
+        return (
+          <li className="py-1 font-bold text-blue-light">
+            {link ? (
+              <a href={link} target="_blank">
+                {presentation}
+              </a>
+            ) : (
+              <>{presentation}</>
+            )}
+          </li>
+        );
+      })
+    ) : (
+      <></>
+    );
 
   return (
     <div className="max-h-sm w-full overflow-hidden rounded-xl bg-offWhite shadow-lg dark:bg-darkMode-gray-tertiary dark:text-offWhite lg:w-1/2">
@@ -60,13 +84,7 @@ export const Card: React.FC<CardProps> = ({
         {showPresentations && (
           <>
             <h3 className="pt-5 text-lg font-bold">Presentations to Date:</h3>
-            <ul className="text-base">
-              {presentationList?.map((presentation) => (
-                <li className="py-1">
-                  <span className="font-bold text-blue-light">{presentation}</span>
-                </li>
-              ))}
-            </ul>
+            <ul className="text-base">{presentations}</ul>
           </>
         )}
       </div>

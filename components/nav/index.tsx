@@ -87,7 +87,7 @@ export const Nav: React.FC = () => {
       {navbarOpen ? (
         <div className="bg-text-secondary absolute z-10 w-full bg-gray-300 dark:bg-gradient-to-b dark:from-darkMode-gray-secondary dark:to-darkMode-gray-primary lg:hidden">
           <div className="space-y-4 px-2 py-10 sm:px-3">
-            {navlinks.map((link, index) => (
+            {navlinks.map((link) => (
               <a
                 key={link.title}
                 href={link.href}
