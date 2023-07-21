@@ -7,20 +7,27 @@ export const KCWiT: React.FC = () => {
     'Teach fundamental coding principles in monthly interactive sessions to excite women about technology and increase diversity in the field.',
   ];
 
-  const presentationList = [
-    'GitHub Profiles and the Secret Sauce',
-    'The Glass | HTML and Front-End Architecture',
-    'The Garnish | Introduction to CSS',
-    'The Liquor | Intro to JavaScript',
-    'Open Source: Hacktoberfest Edition',
-  ];
-
-  const presentationLinks = [
-    'https://docs.google.com/presentation/d/1eGXBt-VPeqATmOVnmMGvGFniqlQ55575GMZ8DW2AlCc/edit?usp=sharing',
-    'https://kansascitywomenintechnology.github.io/CodingCocktailsSlideTemplate/01-glasswork/2023-front-end-html.html#/',
-    'https://kansascitywomenintechnology.github.io/CodingCocktailsSlideTemplate/css-series/2023-css.html#/',
-    'https://kansascitywomenintechnology.github.io/CodingCocktailsSlideTemplate/03-liquor/javascript.html#/',
-    'https://docs.google.com/presentation/d/1MslJrKZMVQ-pCRid2rVO7fq4KQpBAxJ1oqOt-uor0G8/edit?usp=sharing',
+  const presentations = [
+    {
+      name: 'GitHub Profiles and the Secret Sauce',
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vScc99CpE-xfOh3a_sOuFSBBu7XH_-Y-KIJRlcB3K3aOB0zU47ufo65OY4BwxJoYQ/pub?start=false&loop=false&delayms=3000',
+    },
+    {
+      name: 'The Glass | HTML and Front-End Architecture',
+      link: 'https://kansascitywomenintechnology.github.io/CodingCocktailsSlideTemplate/01-glasswork/2023-front-end-html.html#/',
+    },
+    {
+      name: 'The Garnish | Introduction to CSS',
+      link: 'https://kansascitywomenintechnology.github.io/CodingCocktailsSlideTemplate/css-series/2023-css.html#/',
+    },
+    {
+      name: 'The Liquor | Intro to JavaScript',
+      link: 'https://kansascitywomenintechnology.github.io/CodingCocktailsSlideTemplate/03-liquor/javascript.html#/',
+    },
+    {
+      name: 'Open Source: Hacktoberfest Edition',
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vSPDAqSrr_VY8zZ6KraJKnIouNtwC9vAGeG-I-_y1Ubnjthxp_QmeIz47dn2Z3NC75seuFHQ4vRguby/pub?start=false&loop=false&delayms=3000',
+    },
   ];
 
   return (
@@ -40,8 +47,7 @@ export const KCWiT: React.FC = () => {
       resumeList={resumeList}
       showAwards={false}
       showPresentations={true}
-      presentationList={presentationList}
-      presentationLinks={presentationLinks}
+      presentations={presentations}
     />
   );
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 interface CardProps {
   image: JSX.Element;
@@ -8,11 +7,9 @@ interface CardProps {
   dateRange: string;
   resumeList: string[];
   showAwards: boolean;
-  awardNames?: string[];
-  awardDescription?: string[];
+  awards?: { name: string; description: string }[];
   showPresentations: boolean;
-  presentationList?: string[];
-  presentationLinks?: string[];
+  presentations?: { name: string; link?: string }[];
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -22,46 +19,10 @@ export const Card: React.FC<CardProps> = ({
   dateRange,
   resumeList,
   showAwards,
-  awardNames,
-  awardDescription,
+  awards,
   showPresentations,
-  presentationList,
-  presentationLinks,
+  presentations,
 }) => {
-  const awards =
-    showAwards && awardNames && awardDescription ? (
-      awardNames.map((award, index) => {
-        const description = awardDescription[index] || null;
-        return (
-          <li className="py-2">
-            <span className="font-bold text-blue-light">{award}</span> {description}
-          </li>
-        );
-      })
-    ) : (
-      <></>
-    );
-
-  const presentations =
-    presentationList && presentationLinks ? (
-      presentationList?.map((presentation, index) => {
-        const link = presentationLinks[index] || null;
-        return (
-          <li className="py-1 font-bold text-blue-light">
-            {link ? (
-              <a href={link} target="_blank">
-                {presentation}
-              </a>
-            ) : (
-              <>{presentation}</>
-            )}
-          </li>
-        );
-      })
-    ) : (
-      <></>
-    );
-
   return (
     <div className="max-h-sm w-full overflow-hidden rounded-xl bg-offWhite shadow-lg dark:bg-darkMode-gray-tertiary dark:text-offWhite lg:w-1/2">
       <div className="px-6 py-4">
@@ -78,13 +39,31 @@ export const Card: React.FC<CardProps> = ({
         {showAwards && (
           <>
             <h3 className="border-t-2 pt-5 text-lg font-bold">Awards:</h3>
-            <ul className="text-base">{awards}</ul>
+            <ul className="text-base">
+              {awards?.map((award) => (
+                <li className="py-2">
+                  <span className="font-bold text-blue-light">{award.name}</span> {award.description}
+                </li>
+              ))}
+            </ul>
           </>
         )}
         {showPresentations && (
           <>
             <h3 className="pt-5 text-lg font-bold">Presentations to Date:</h3>
-            <ul className="text-base">{presentations}</ul>
+            <ul className="text-base">
+              {presentations?.map((presentation) => (
+                <li className="py-1 font-bold text-blue-light">
+                  {presentation.link ? (
+                    <a href={presentation.link} target="_blank">
+                      {presentation.name}
+                    </a>
+                  ) : (
+                    <>{presentation.name}</>
+                  )}
+                </li>
+              ))}
+            </ul>
           </>
         )}
       </div>

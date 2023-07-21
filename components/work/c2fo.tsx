@@ -10,10 +10,17 @@ export const C2FO: React.FC = () => {
     'Designed and implemented the frontend for an initiative that allowed suppliers to receive faster funding onto their card, generating an additional $2.8MM of spend in a month.',
     'Led Knowledge Transfers and mentored team members on utilizing new technologies, enhancing analytic metric visibility.',
   ];
-  const awardNames = ['2023 “Outta-the-Park”', '2023 Fintech Breakthrough Award for B2B Payments Innovation'];
-  const awardDescription = [
-    'for rebranding the frontend design in the CashFlow+ application, increasing modularity and reusable components across multiple platforms.',
-    'awarded to the team for the work on improving cash flow to suppliers with the CashFlow+ product.',
+
+  const awards = [
+    {
+      name: '2023 “Outta-the-Park”',
+      description:
+        'for rebranding the frontend design in the CashFlow+ application, increasing modularity and reusable components across multiple platforms.',
+    },
+    {
+      name: '2023 Fintech Breakthrough Award for B2B Payments Innovation',
+      description: 'awarded to the team for the work on improving cash flow to suppliers with the CashFlow+ product.',
+    },
   ];
   return (
     <Card
@@ -31,8 +38,7 @@ export const C2FO: React.FC = () => {
       dateRange="December 2021 to Present"
       resumeList={resumeList}
       showAwards={true}
-      awardNames={awardNames}
-      awardDescription={awardDescription}
+      awards={awards}
       showPresentations={false}
     />
   );
