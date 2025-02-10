@@ -7,7 +7,7 @@ export const Socials: React.FC = () => {
       <a href="https://github.com/vanessashultz" target="_blank">
         <AiFillGithub className="transition-all duration-500 hover:text-primary hover:dark:text-blue-green" />
       </a>
-      <a href="https://www.linkedin.com/in/vanessashultz/" target="_blank">
+      <a href="https://www.linkedin.com/in/vanessa-shultz" target="_blank">
         <AiFillLinkedin className="transition-all duration-500 hover:text-primary hover:dark:text-blue-green" />
       </a>
       <a href="mailto:vanessa.shultz1@gmail.com" target="_blank">
