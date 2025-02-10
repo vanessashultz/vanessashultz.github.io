@@ -30,18 +30,17 @@ export const AboutMe: React.FC = () => {
         </p>
         <p className="py-2 lg:py-4">
           In my free time, I enjoy playing videos games, such as the{' '}
-          <span className="font-bold text-tertiary dark:text-blue-light">Mass Effect Series</span> and{' '}
-          <span className="font-bold text-tertiary dark:text-blue-light">It Takes Two</span>. I have recently
-          rediscovered my love for reading sci-fi books and am currently emersed into{' '}
-          <span className="font-bold text-tertiary dark:text-blue-light">The Expanse Series</span>. Crafting and DIY
-          projects take up a large part of my time. My crafts include crocheting, drawing, restoring antique furniture
-          and my proudest achievement:{' '}
-          <span className="font-bold text-tertiary dark:text-blue-light">a DIY miniture house project</span>. On video,
+          <span className="font-bold text-tertiary dark:text-blue-light">Mass Effect Series</span>,{' '}
+          <span className="font-bold text-tertiary dark:text-blue-light">Hogwarts Legacy</span>, and{' '}
+          <span className="font-bold text-tertiary dark:text-blue-light">It Takes Two</span>. You will often
+          find me listening to new books through Libby or learning a new skill through Skillshare. Crafting and DIY
+          projects take up a large part of my time. My crafts include crocheting, digital art through Procreate,
+          drawing, restoring antique furniture and my proudest achievement:{' '}
+          <span className="font-bold text-tertiary dark:text-blue-light">a DIY miniature house project</span>. On video,
           you can find me with a cup of tea in hand surrounded by one of my three cats 🐈‍⬛ and two dogs 🐕‍🦺. My two
           standard poodles, Violet and Lola, love joining me on daily walks around the city. My favorite place in the
           world is <span className="font-bold text-tertiary dark:text-blue-light">12,000 feet above sea level</span> on
-          a mountain (after the altitude sickness wears off of course). I dream to one day own a mountain where I can
-          hike and play my piano/sing as loud as I want!
+          a mountain (after the altitude sickness wears off of course).
         </p>
         <p className="py-2 lg:pb-2 lg:pt-4">
           I can never learn enough and I'm always finding new avenues I want to explore! This is apparent in my{' '}

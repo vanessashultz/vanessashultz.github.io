@@ -35,7 +35,7 @@ export const C2FO: React.FC = () => {
       }
       companyLink="https://c2fo.com/"
       title="Software Engineer"
-      dateRange="December 2021 to Present"
+      dateRange="December 2021 to December 2023"
       resumeList={resumeList}
       showAwards={true}
       awards={awards}
