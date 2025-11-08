@@ -15,6 +15,8 @@ export const Tallgrass: React.FC = () => {
                 <Image
                     src="/logos/tgf_logo.png"
                     alt="logo"
+                    width={208}
+                    height={48}
                     className="h-12 w-52 dark:rounded-md dark:border-2 dark:border-blue-dark dark:bg-offWhite dark:p-1"
                 />
             }
